@@ -1,0 +1,9 @@
+google-generativeai
+base64
+io
+json
+mimetypes
+pathlib
+pprint
+requests
+streamlit
