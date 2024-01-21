@@ -1,8 +1,9 @@
 import google.generativeai as genai
 import streamlit as st
-from dotenv import load_env
+from dotenv import load_dotenv
 load_dotenv()
-genai.configure(api_key=os.get_env('GOOGLE_API_KEY'))
+
+genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 model = 'gemini-pro'
 
 with st.sidebar:
