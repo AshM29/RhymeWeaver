@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
-model = 'gemini-pro'
+model = genai.GenerativeModel("gemini-pro")
 
 with st.sidebar:
     st.title("Rhymeweaver")
